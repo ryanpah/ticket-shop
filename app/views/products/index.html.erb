@@ -7,5 +7,6 @@
 <%= number_to_currency product.price %>
 <%#= truncate product.description, length: 100 %>
 </div>
-<%= button_to "Add Item to Cart", add_product_to_cart_path(@product) %>
+
+<%= button_to "Add Item to Cart", add_product_to_cart_path(product) %>
 <% end %>

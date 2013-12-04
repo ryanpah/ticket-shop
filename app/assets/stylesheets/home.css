@@ -100,7 +100,7 @@ h5 {
   right: 10px;
 }
 
-.btn {
+.btn, input[type="submit"] {
   border-radius: 0;
   font-size: 14px;
   font-weight: 100;
