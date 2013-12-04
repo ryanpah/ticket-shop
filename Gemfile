@@ -6,6 +6,11 @@ gem 'devise'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+group :development do
+gem 'pry'
+gem 'better_errors'
+end
+
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

@@ -1,7 +1,11 @@
 <h1>Products</h1>
+
 <% @products.each do |product| %>
+<div>
 <%= product.company %>
 <%= product.name %>
 <%= number_to_currency product.price %>
 <%#= truncate product.description, length: 100 %>
+</div>
+<%= button_to "Add Item to Cart", add_product_to_cart_path(@product) %>
 <% end %>
