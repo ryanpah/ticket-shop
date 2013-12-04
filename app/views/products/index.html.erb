@@ -1,0 +1,7 @@
+<h1>Products</h1>
+<% @products.each do |product| %>
+<%= product.company %>
+<%= product.name %>
+<%= number_to_currency product.price %>
+<%#= truncate product.description, length: 100 %>
+<% end %>
